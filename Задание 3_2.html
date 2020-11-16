@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Задание 3_2</title>
+   <meta charset="utf-8">
+ </head>
+ 
+ <body>
+	<p><h1>Заполните параметры перед запуском тестирования</h1></p>
+	
+	<form action = "registration.php" metod="post">
+	
+	<p>
+	<label for="name">Имя тестировщика</label>
+		<input type="text" id="name" name="name"></input>
+	</p>
+	
+	 <p>
+	<label>Вид тестирования производительности
+	<select>
+		<option value="Нагрузочное">Нагрузочное</option>
+		<option value="Тестирование стабильности">Тестирование стабильности</option>
+		<option value="Тестирование отказоустойчивости">Тестирование отказоустойчивости</option>
+    </select>
+	</label>
+	</p>
+	
+	<p>
+	<label>Тестовый сценарии:<br>
+		<input type="radio" value="doc" name="scenariy">Поиск документов</input><br>
+		<input type="radio" value="pay" name="scenariy">Приём платежей</input><br>
+		<input type="radio" value="report" name="scenariy">Формирование отчётов</input>
+	</label>
+	</p>
+	
+	<p>
+	<input type="checkbox" id="save" name="save"></input>
+	<label for="save">	
+	Сохранить отчет о тестировании
+	</label>
+	</p>
+	
+	<p>
+	<label for="note">Примечание</label><br>
+		<textarea id="note" cols="20" rows="6"></textarea>
+	</p>
+	
+	<p>
+	<a href="Задание 3_1.html">Отмена</a>
+	</p>
+	
+	<hr>
+		
+	<button type="submit">СТАРТ ТЕСТИРОВНИЯ</button>	
+
+</form>
+ </body>
+ </html>
+ 

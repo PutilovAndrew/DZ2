@@ -1,0 +1,58 @@
+<html>
+ <head>
+   <title>Задание 2</title>
+   <meta charset="utf-8">
+ </head>
+ 
+ <body>
+	<p><h1>Заполните форму регистрации</h1></p>
+	
+	<form action = "login.php" metod="post">
+	<p>
+	<label for="login">Логин</label>
+		<input type="text" id="login"></input>
+	</p>
+	<p>
+	<label for="password">Пароль</label>
+		<input type="password" id="password"></input>
+	<button type="submit">Проверить пароль</button>
+	</p>
+	</form>
+	
+	<form action="userData.php" method="post">
+	<p>
+	<label for="email">Электронная почта</label>
+		<input type="text" id="email"></input>
+	</p>
+	
+    <p>
+	<label>Город
+	<select>
+		<option value="Новосибирск">Новосибирск</option>
+		<option value="Бердск">Бердск</option>
+		<option value="Кольцово">Кольцово</option>
+    </select>
+	</label>
+	</p>
+	
+	<p>
+	<label>Пол
+		<input type="radio" value="man" name="sex">М</input>
+		<input type="radio" value="woman" name="sex">Ж</input>
+	</label>
+	</p>
+		
+	<p>
+	<input type="checkbox" id="consent"></input>
+	<label for="consent">	
+	Согласен с условиями регистрации
+	</label>
+	</p>
+	
+	<hr>
+	<button type="submit">Регистрация</button>	
+	</form>
+			
+ </body>
+ </html>
+ 
